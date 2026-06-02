@@ -1,51 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathan Fredman</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-    }
-    nav a {
-      margin-right: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Nathan Fredman</h1>
+  <div class="container">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+      <a class="nav-name" href="index.html">Nathan Fredman</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-  <p>
-    I am a physics PhD candidate at the University of Illinois Urbana-Champaign.
-    My research focuses on ultracold atoms, optical lattices, quantum simulation,
-    and transport in disordered many-body systems.
-  </p>
+    <section class="hero">
+      <div class="hero-kicker">Physics · AMO · Quantum Simulation</div>
+      <h1>Nathan Fredman</h1>
+      <p class="subtitle">
+        Physics PhD candidate at the University of Illinois Urbana-Champaign working on
+        ultracold atoms, optical lattices, quantum simulation, and transport in disordered
+        many-body systems.
+      </p>
 
-  <h2>Research</h2>
-  <p>
-    My PhD work was on diffusive dynamics in optical lattice systems, with an emphasis on
-    transport in the disordered Bose-Hubbard model.
-  </p>
+      <div class="hero-buttons">
+        <a class="button primary" href="research.html">Research</a>
+        <a class="button" href="cv.pdf">Download CV</a>
+        <a class="button" href="contact.html">Contact</a>
+      </div>
+    </section>
 
-  <h2>Selected Links</h2>
-  <ul>
-    <li><a href="cv.pdf">CV</a></li>
-    <li><a href="publications.html">Publications</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <main class="grid">
+
+      <section class="card wide">
+        <h2>About</h2>
+        <p>
+          I am a physics PhD candidate at the University of Illinois Urbana-Champaign.
+          My research focuses on ultracold atoms, optical lattices, quantum simulation,
+          and transport in disordered many-body systems.
+        </p>
+      </section>
+
+      <section class="card small">
+        <h2>Research</h2>
+        <p>
+          My PhD work studies diffusive dynamics in optical lattice systems, with an emphasis on
+          transport in the disordered Bose-Hubbard model.
+        </p>
+        <p>
+          <a href="research.html">Read more →</a>
+        </p>
+      </section>
+
+      <section class="card small">
+        <h2>Selected links</h2>
+        <ul>
+          <li><a href="cv.pdf">CV</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/nathan-fredman/">LinkedIn</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      © Nathan Fredman
+    </footer>
+
+  </div>
 </body>
 </html>
