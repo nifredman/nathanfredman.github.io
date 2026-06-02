@@ -1,0 +1,286 @@
+/* =========================
+   Nathan Fredman website
+   Shared site style
+   ========================= */
+
+:root {
+  --bg: #f6f7fb;
+  --bg-soft: #eef2ff;
+  --text: #172033;
+  --muted: #64748b;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --border: #e2e8f0;
+  --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 32rem),
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.10), transparent 28rem),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 34px 22px 70px;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 56px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.nav-name {
+  font-weight: 750;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 550;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  background: var(--bg-soft);
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+h1, h2, h3 {
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  margin: 0 0 18px;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin: 0 0 14px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 24px 0 8px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  max-width: 780px;
+}
+
+/* =========================
+   Hero
+   ========================= */
+
+.hero {
+  margin-bottom: 34px;
+  padding: 28px 0 10px;
+}
+
+.hero-kicker {
+  color: var(--accent);
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+/* =========================
+   Cards and sections
+   ========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 22px;
+}
+
+.card {
+  grid-column: span 12;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.card.small {
+  grid-column: span 6;
+}
+
+.card.wide {
+  grid-column: span 12;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================
+   Images / figures
+   ========================= */
+
+figure {
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure img {
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.10);
+  background: white;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================
+   Lists
+   ========================= */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  margin-top: 54px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 760px) {
+  nav {
+    align-items: flex-start;
+    border-radius: 24px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-links a {
+    padding: 6px 9px;
+  }
+
+  .card,
+  .card.small {
+    grid-column: span 12;
+    padding: 23px;
+  }
+
+  .container {
+    padding: 20px 16px 50px;
+  }
+}
