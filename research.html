@@ -1,158 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research - Nathan Fredman</title>
-
-  <style>
-    :root {
-      --bg: #f7f8fb;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --card: #ffffff;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-
-    header {
-      margin-bottom: 36px;
-    }
-
-    nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin-bottom: 36px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    h1 {
-      font-size: 2.7rem;
-      line-height: 1.1;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.15rem;
-      max-width: 720px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-    }
-
-    figure {
-      margin: 24px 0 0;
-      text-align: center;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-    }
-
-    figcaption {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      margin-top: 48px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-    }
-
-    a {
-      color: var(--accent);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
+      <a class="nav-name" href="index.html">Nathan Fredman</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
 
-    <header>
+    <section class="hero">
+      <div class="hero-kicker">Research</div>
       <h1>Research</h1>
       <p class="subtitle">
         Ultracold atoms, optical lattices, quantum simulation, and transport in disordered many-body systems.
       </p>
-    </header>
-
-    <section class="card">
-      <h2>Overview</h2>
-      <p>
-        My research focuses on ultracold atoms in optical lattices, with an emphasis on quantum simulation,
-        transport, diffusion dynamics, and many-body physics in lattice systems.
-      </p>
     </section>
 
-    <section class="card">
-      <h2>Transport Dynamics</h2>
-      <p>
-        I study how particles move, diffuse, and relax in engineered optical lattice potentials.
-      </p>
+    <main class="grid">
+      <section class="card wide">
+        <h2>Overview</h2>
+        <p>
+          My research focuses on ultracold atoms in optical lattices, with an emphasis on quantum simulation,
+          diffusion dynamics, and transport in interacting many-body systems.
+        </p>
+      </section>
 
-      <figure>
-        <img 
-          src="https://nathanfredman.com/movingcart.gif" 
-          alt="Animated cart demonstration"
-        >
-        <figcaption>Moving Cart</figcaption>
-      </figure>
-    </section>
+      <section class="card wide">
+        <h2>Transport dynamics</h2>
+        <p>
+          I study how particles move, diffuse, and relax in engineered optical lattice potentials.
+        </p>
+
+        <figure>
+          <img src="https://nathanfredman.com/movingcart.gif" alt="Animated cart demonstration">
+          <figcaption>Moving atoms</figcaption>
+        </figure>
+      </section>
+    </main>
 
     <footer>
       © Nathan Fredman
     </footer>
+
   </div>
 </body>
-</html>
