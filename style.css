@@ -412,3 +412,101 @@ footer {
     max-width: 120px;
   }
 }
+
+
+/* =========================
+   Writings page
+   ========================= */
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.writing-entry {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 1) 55%);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+.writing-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.10);
+}
+
+.writing-marker {
+  width: 80px;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.writing-type {
+  display: block;
+  padding: 7px 0;
+  background: var(--accent);
+  color: white;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.writing-year {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 850;
+  line-height: 1;
+  padding: 14px 0 13px;
+  color: var(--text);
+}
+
+.writing-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+}
+
+.writing-meta {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.writing-button {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px 15px;
+  border-radius: 999px;
+  background: var(--text);
+  color: white;
+  text-decoration: none;
+  font-weight: 750;
+  font-size: 0.94rem;
+}
+
+.writing-button:hover {
+  background: var(--accent);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .writing-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-marker {
+    width: 100%;
+    max-width: 120px;
+  }
+}
